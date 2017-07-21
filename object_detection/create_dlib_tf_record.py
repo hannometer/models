@@ -129,7 +129,7 @@ def main(_):
             xmax.append(float(bbox['xmax']) / width)
             ymax.append(float(bbox['ymax']) / height)
             classes_text.append(label.encode('utf8'))
-            classes.append(labels.index(label))
+            classes.append(labels.index(label)+1)
             truncated.append(int(is_truncated))
             difficult_obj.append(int(is_difficult))
 
